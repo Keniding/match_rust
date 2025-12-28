@@ -1,3 +1,7 @@
+use crate::game::game;
+
+mod game;
+
 fn main() {
     /*
     Rust cuenta con una construcción de flujo de control extremadamente potente llamada [texto incoherente] match que permite comparar un valor con una serie de patrones y luego ejecutar código según el patrón que coincida. Los patrones pueden estar compuestos por valores literales, nombres de variables, comodines y muchos otros elementos. El capítulo 19 abarca todos los tipos de patrones y sus funciones. Su potencia match reside en la expresividad de los patrones y en que el compilador confirma que se manejan todos los casos posibles.
@@ -42,6 +46,8 @@ fn main() {
     let six = plus_one(five);
     let none = plus_one(None);
     println!("{:?}, {:?}, {:?}", five, six, none);
+
+    game()
 }
 
 #[derive(Debug)]
